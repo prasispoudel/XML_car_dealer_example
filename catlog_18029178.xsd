@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="shop">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="shop_name"/>
+              <xs:element type="xs:string" name="shop_address"/>
+              <xs:element type="xs:string" name="shop_telephone"/>
+              <xs:element type="xs:anyURI" name="shop_website"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="product">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="suv">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="suv_item" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="manufracturer"/>
+                          <xs:element type="xs:string" name="brand_name"/>
+                          <xs:element type="xs:string" name="version" minOccurs="0"/>
+                          <xs:element name="carType">
+                              <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:enumeration value="fuel"/>
+                                        <xs:enumeration value="electric"/>
+                                        <xs:enumeration value="Hybrid"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element type="xs:int" name="price"/>
+                          <xs:element type="xs:string" name="odometer_count"/>
+                          <xs:element name="model_year">
+                              <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+                                    </xs:restriction>
+                              </xs:simpleType>
+                          </xs:element>
+                          <xs:element type="xs:integer" name="mileage" minOccurs="0"/>
+                          <xs:element type="xs:string" name="color"/>
+                          <xs:element type="xs:string" name="Displacement"/>
+                          <xs:element name="registration_number">
+                               <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:length value="7"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="service_requirement" minOccurs="0">
+                                <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="width">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="length">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="height">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Wheelbase" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ground_clearence" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="product_number" use="required"/>
+                        <xs:attribute name="insurance">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Done"/>
+                          <xs:enumeration value="Not-Done"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="road_tax">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:enumeration value="paid"/>
+                                  <xs:enumeration value="not-paid"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                        <xs:attribute name="VIN">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:length value="17"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                        <xs:attribute name="engine_number">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:length value="10"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="item_number" use="required"/>
+                  <xs:attribute type="xs:byte" name="quantity" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="hatchback">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="hatch_item" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="manufracturer"/>
+                          <xs:element type="xs:string" name="brand_name"/>
+                          <xs:element type="xs:string" name="version" minOccurs="0"/>
+                          <xs:element name="carType">
+                              <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:enumeration value="fuel"/>
+                                        <xs:enumeration value="electric"/>
+                                        <xs:enumeration value="Hybrid"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element type="xs:int" name="price"/>
+                          <xs:element type="xs:string" name="odometer_count"/>
+                          <xs:element name="model_year">
+                              <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+                                    </xs:restriction>
+                              </xs:simpleType>
+                              </xs:element>
+                          <xs:element type="xs:integer" name="mileage" minOccurs="0"/>
+                          <xs:element type="xs:string" name="color"/>
+                          <xs:element type="xs:string" name="Displacement"/>
+                          <xs:element name="registration_number">
+                               <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:length value="7"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="service_requirement" minOccurs="0">
+                                <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="width">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="length">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="height">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Wheelbase" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ground_clearence" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="product_number" use="required"/>
+                        <xs:attribute name="insurance">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Done"/>
+                          <xs:enumeration value="Not-Done"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="road_tax">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:enumeration value="paid"/>
+                                  <xs:enumeration value="not-paid"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                        <xs:attribute name="VIN">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:length value="17"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                        <xs:attribute name="engine_number">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:length value="10"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="item_number" use="required"/>
+                  <xs:attribute type="xs:byte" name="quantity" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sedan">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="sedan_item" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="manufracturer"/>
+                          <xs:element type="xs:string" name="brand_name"/>
+                          <xs:element type="xs:string" name="version" minOccurs="0"/>
+                          <xs:element name="carType">
+                              <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:enumeration value="fuel"/>
+                                        <xs:enumeration value="electric"/>
+                                        <xs:enumeration value="Hybrid"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element type="xs:int" name="price"/>
+                          <xs:element type="xs:string" name="odometer_count"/>
+                          <xs:element name="model_year">
+                              <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+                                    </xs:restriction>
+                              </xs:simpleType>
+                              </xs:element>
+                          <xs:element type="xs:integer" name="mileage" minOccurs="0"/>
+                          <xs:element type="xs:string" name="color"/>
+                          <xs:element type="xs:string" name="Displacement"/>
+                          <xs:element  name="registration_number">
+                               <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:length value="7"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="service_requirement" minOccurs="0">
+                                <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="width">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="length">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="height">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Wheelbase" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ground_clearence" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                 <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="range" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute name="unit">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:pattern value="inch|km|mile|cm"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                                  </xs:attribute>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element> 
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="product_number" use="required"/>
+                        <xs:attribute name="insurance">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Done"/>
+                          <xs:enumeration value="Not-Done"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="road_tax">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:enumeration value="paid"/>
+                                  <xs:enumeration value="not-paid"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                        <xs:attribute name="VIN">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:length value="17"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                        <xs:attribute name="engine_number">
+                                  <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                  <xs:length value="10"/>
+                                  </xs:restriction>
+                                  </xs:simpleType> 
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="item_number" use="required"/>
+                  <xs:attribute type="xs:byte" name="quantity" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

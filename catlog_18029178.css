@@ -1,0 +1,268 @@
+root{
+    color: rgb(250, 248, 248);
+    display:block;
+    background-image: url("unity.jpg"),url("logo.png");
+    opacity: 30%,0%;
+    background-repeat: no-repeat ,no-repeat;
+    background-position: left, 15cm 2cm ;
+    background-size: cover,5cm 4cm;
+    background-attachment: fixed, scroll;
+    background-blend-mode:saturation,hard-light;
+
+}
+shop:hover{
+    transform: rotateY(180deg);
+    transition: transform 0.9s;
+    transform-style: flat;
+    background: transparent;
+    backface-visibility: hidden;
+   
+    background-size: 5cm 5cm,auto;
+    background-position: center,auto;
+    background-repeat: no-repeat,repeat;
+}
+shop{
+    display: block;
+    width: auto;
+    height: auto;
+    border: 5px solid rgb(75, 68, 59);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+    background-image: url("paper.jpg");
+    image-orientation: contain, ;
+    background-position: auto;
+    background-size: 2cm 2cm;
+    border-color: maroon;
+    text-decoration-color: rgb(187, 128, 202);
+}
+shop_name:hover{
+    color: rgb(40, 163, 116);
+}
+
+shop_name{
+    size:4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4cm;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+shop_address:hover{
+    color: rgba(0, 6, 8, 0.719);
+}
+shop_address{
+      text-align: inherit;
+      font-weight: bold;
+      font-display: block;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgba(10, 113, 161, 0.719);
+  } 
+shop_telephone:before{
+     content: "Tele Phone Number: ";
+     margin-left: 10cm;
+
+}     
+ shop_telephone{
+     
+     font-weight: lighter;
+     flex-shrink: initial;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: rgba(10, 113, 161, 0.719);
+
+}
+shop_website:before{ content:"Contact us at: ";}
+shop_website{
+    margin: 2cm 2cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgba(255, 255, 255, 0.719);
+}
+product:before{
+        color:white;
+        display: block;
+        width: fit-content;
+        font-weight: bold;
+        font-size: 200%;
+        content: "Our Products: ";
+        margin: -.75em 1px .25em -.25em;
+        border-radius: 10%;
+        padding: .1em .25em;
+        background-color:rgba(112, 68, 184, 0.678);
+}
+product{
+       width: auto;
+       height: auto;
+       padding: 5px;
+}
+hatchback{display:block; margin:20px; padding:15px; width:auto; height: auto; border: 10px solid rgb(212,175,55);background-image: inherit;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border: 3px solid rgb(241, 243, 238);
+    background-image: url("hatch_1.jpg"), url("hatch_2.jpg"), url("hatch_3.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 4cm, 14cm,25cm;
+    background-position-x: 3cm ,3cm ,3cm;
+    background-size: 6cm 6cm,6cm 6cm,6cm 6cm;
+}
+suv:before{display: block;content:"SUV";
+    color:white;
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 200%;
+    margin: -.75em 1px .25em -.25em;
+    border-radius: 10%;
+    padding: .1em .25em;
+    background-color:rgba(112, 68, 184, 0.678);
+
+}
+suv{display:block; margin:20px; padding:15px; width:auto; height: auto; border: 10px solid rgb(212,175,55); background-image: inherit;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border: 3px solid rgb(243, 247, 239);
+    background-image: url("suv_1.jpg"), url("suv_2.jpg"), url("suv_3.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 4cm, 14cm,25cm;
+    background-position-x: 3cm ,3cm ,3cm;
+    background-size: 6cm 6cm,6cm 6cm,6cm 6cm;
+
+}
+suv_item:hover{
+    transform: rotateY(180deg);
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    background: transparent;
+    backface-visibility: hidden;
+}
+suv_item{
+    width: auto;
+    height: auto;
+    display: list-item;
+    list-style: number;
+    list-style-position: outside;
+    font-weight: bold;
+    margin: 2cm 2cm;
+    border: 5px solid white;  
+    background-color: rgb(0, 2, 2);  
+}
+hatchback:before{display: block;content: "HatchBack";
+    color:white;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 200%;
+    margin: -.75em 1px .25em -.25em;
+    border-radius: 10%;
+    padding: .1em .25em;
+    background-color:rgba(112, 68, 184, 0.678);
+
+}
+hatch_item:hover{
+    transform: rotateY(180deg);
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    background: transparent;
+    backface-visibility: hidden;
+  
+}
+hatch_item{
+    width: auto;
+    height: auto;
+    display: list-item;
+    list-style-type: square;
+    list-style-position: outside;
+    font-weight: bold;
+    margin: 2cm 2cm;
+    border: 5px solid white;
+    background-color: rgb(0, 2, 2);
+}
+sedan:before{display: block;content: "Sedan";
+    color:white;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 200%;
+    margin: -.75em 1px .25em -.25em;
+    border-radius: 30%;
+    padding: .1em .25em;
+    background-color:rgba(112, 68, 184, 0.678);
+
+
+}
+sedan{display:block; margin:20px; padding:15px; width:auto; height: auto; border: 10px solid burlywood;background-image: inherit;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border: 3px solid rgb(246, 247, 245);
+    background-image: url("sedan_1.jpg"), url("sedan_2.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 4cm, 14cm;
+    background-position-x: 3cm ,3cm;
+    background-size: 8cm 6cm,8cm 6cm;
+}
+sedan_item:hover{
+    transform: rotateY(180deg);
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    background: transparent;
+    backface-visibility: hidden;
+}
+sedan_item{
+    width: auto;
+    height: auto;
+    display: list-item;
+    list-style: square;
+    list-style-position: outside;
+    font-weight: bold;
+    margin: 2cm 2cm;
+    border: 5px solid white;
+    background-color: rgb(0, 2, 2);
+    list-style-type: disc;
+}
+manufracturer:before{display:inline-table;  content:"Manufracturer:- ";size: auto;}
+manufracturer{display:block;}
+brand_name:before{display: inline-table; content:"Band:- "}
+brand_name{display:block;}
+version:before{display:inline-table; content:"Version:- "}
+version{display:block;}
+carType:before{display:inline-table;content:"Energy Type:- "}
+carType{display:block;}
+price:before{display:inline-table;content:"Price:- NRS "}
+price{display:block;}
+odometer_count:before{display: inline-table; content:"KMS driven:- "}
+odometer_count{display:block;}
+odometer_count:after{display: inline-block;content: "km";}
+model_year:before{display:inline-table;content:"Model of Year:- "}
+model_year{display:block;}
+mileage:before{display:inline-table; content:"Average Mileage:- "}
+mileage{display:block;}
+mileage:after{display:inline-block;content: "kmpl";}
+color:before{display:inline-table; content: "Body Color:- ";}
+color{display:block;}
+Displacement:before{display: inline-table; content:"Total Displacement:- "}
+Displacement{display:block;}
+Displacement:after{display:inline-block;content:"cc";}
+registration_number:before{display:inline-table;content:"Vehicle Registration Number:-"}
+registration_number{display:block;}
+service_requirement:before{display:inline-table; content:"Service Required:- "}
+service_requirement{display:block;}
+width:before{display: inline-table; content:"Width:-  "}
+width{display:block;} 
+length:before{display: inline-table; content: "Length:-";}
+length{display: block;} 
+legth:after{display: inline-block;content:"inch"}
+height:before{display: inline-table; content:"Height:- "}
+height{display:block;}
+height:after{display:inline-block;content: "inch";}
+Wheelbase:before{display: inline-table;content:"Total WheelBase:- "}
+Wheelbase{display:block;}
+Wheelbase:after{display: inline-block;content: "inch";}
+ground_clearence:before{display: inline-table;content:"Maximum Ground Clearence:- "}
+ground_clearence{display:block;}
+ground_clearence:after{display:inline-block;content:"inch"}
+range:before{display: inline-table;content:"Total Range(operation of electric motor + gasoline engine):- "}
+range{display:block;}
+range:after{display: inline-block;content: "km";}
+

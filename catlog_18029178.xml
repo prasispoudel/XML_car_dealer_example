@@ -1,0 +1,169 @@
+<?xml version ="1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/css" href="catlog_18029178.css"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="catlog_18029178.xsd">
+<shop>
+     <shop_name>Unity Dealer</shop_name>
+     <shop_address>Koteshwor -32,kathmandu Nepal</shop_address>
+     <shop_telephone>977+014600923</shop_telephone>
+     <shop_website>www.unitycars.com</shop_website>
+</shop>
+<product>
+     <suv item_number="1" quantity="3">
+          <suv_item product_number="1" insurance="Done" road_tax="paid" VIN="JT4RN13P7k0001611" engine_number="52WVC10338">
+               <manufracturer>Toyota Motor Corporation</manufracturer>
+               <brand_name>Toyota LandCruser</brand_name>
+               <version>VX</version>
+               <carType>fuel</carType>
+               <price>7500000</price>
+               <odometer_count>57000</odometer_count>
+               <model_year>2001</model_year>
+               <color>white</color>
+               <Displacement>3000</Displacement>
+               <registration_number>1579856</registration_number>
+               <service_requirement>Yes</service_requirement>
+               <width unit="inch">77.95</width>
+               <length unit="inch">194.9</length>
+               <height unit="inch">74.0</height>
+               <ground_clearence unit="inch">8.9</ground_clearence>
+          </suv_item>
+
+          <suv_item product_number="2" insurance="Not-Done" road_tax="not-paid" VIN="PS4RT13P7X2011611" engine_number="22MVL10239">
+               <manufracturer>Ford Motor Company</manufracturer>
+               <brand_name>Ford Escape</brand_name>
+               <carType>fuel</carType>
+               <price>6000000</price>
+               <odometer_count>71000</odometer_count>
+               <model_year>2005</model_year>
+               <mileage>8</mileage>
+               <color>grey</color>
+               <Displacement>3200</Displacement>
+               <registration_number>1758552</registration_number>
+               <service_requirement>No</service_requirement>
+               <width unit="inch">70.95</width>
+               <length unit="inch">184.9</length>
+               <height unit="inch">64.0</height>
+               <Wheelbase unit="inch">103.2</Wheelbase>
+          </suv_item>
+
+         <suv_item product_number="3" insurance="Done" road_tax="paid" VIN="TT4PN13L7H0201628" engine_number="64OVU10237">
+               <manufracturer>Nissan Group</manufracturer>
+               <brand_name>Nissan Petrol</brand_name>
+               <version>GX</version>
+               <carType>fuel</carType>
+               <price>7000000</price>
+               <odometer_count>60000</odometer_count>
+               <model_year>2002</model_year>
+               <mileage>6</mileage>
+               <color>white</color>
+               <Displacement>3500</Displacement>
+               <registration_number>4517852</registration_number>
+               <service_requirement>No</service_requirement>
+               <width unit="inch">75.25</width>
+               <length unit="inch">192.3</length>
+               <height unit="inch">72.1</height>
+               <Wheelbase unit="inch">110.5</Wheelbase>
+               <ground_clearence unit="inch">8.2</ground_clearence>
+          </suv_item>
+     </suv>
+
+     <hatchback item_number="2" quantity="3">
+          <hatch_item product_number="1" insurance="Done" road_tax="paid" VIN="DT4PL13J7N0217627" engine_number="89OVH18239">
+               <manufracturer>Toyota Motor Corporation</manufracturer>
+               <brand_name>Toyota Etios Liva</brand_name>
+               <version>VX</version>
+               <carType>fuel</carType>
+               <price>3000000</price>
+               <odometer_count>20000</odometer_count>
+               <model_year>2015</model_year>
+               <color>Grey</color>
+               <Displacement>1200</Displacement>
+               <registration_number>1647852</registration_number>
+               <service_requirement>No</service_requirement>
+               <width unit="inch">1695.0</width>
+               <length unit="inch">166.73</length>
+               <height unit="inch">59.44</height>
+               <Wheelbase unit="inch">98.85</Wheelbase>
+               <ground_clearence unit="inch">6.69</ground_clearence>
+          </hatch_item>
+
+         <hatch_item product_number="2" insurance="Not-Done" road_tax="paid" VIN="DT4PL13J7N0217627" engine_number="89OVH18239">
+               <manufracturer>Maruti Suzuki</manufracturer>
+               <brand_name>Suzuki Swift</brand_name>
+               <carType>fuel</carType>
+               <price>2500000</price>
+               <odometer_count>25000</odometer_count>
+               <model_year>2013</model_year>
+               <mileage>16</mileage>
+               <color>Grey</color>
+               <Displacement>1200</Displacement>
+               <registration_number>1864582</registration_number>
+               <service_requirement>Yes</service_requirement>
+               <width unit="inch">1665.0</width>
+               <length unit="inch">164.73</length>
+               <height unit="inch">57.44</height>
+               <ground_clearence unit="inch">6.59</ground_clearence>
+          </hatch_item>
+
+          <hatch_item product_number="1" insurance="Done" road_tax="paid" VIN="DT4PL13J7N0217627" engine_number="89OVH18239">
+               <manufracturer>Hyundai Motor Company</manufracturer>
+               <brand_name>Hyundai i10</brand_name>
+               <version>asta</version>
+               <carType>fuel</carType>
+               <price>1900000</price>
+               <odometer_count>19000</odometer_count>
+               <model_year>2016</model_year>
+               <mileage>19</mileage>
+               <color>Red</color>
+               <Displacement>1199</Displacement>
+               <registration_number>1546784</registration_number>
+               <service_requirement>No</service_requirement>
+               <width unit="inch">1595.0</width>
+               <length unit="inch">162.73</length>
+               <height unit="inch">54.44</height>
+               <Wheelbase unit="inch">91.25</Wheelbase>
+               <ground_clearence unit="inch">6.62</ground_clearence>
+          </hatch_item>
+      </hatchback>
+     <sedan item_number="3" quantity="2">
+           <sedan_item product_number="1" insurance="Not-Done" road_tax="paid" VIN="DT4PL13J7N0217627" engine_number="89OVH18239">
+               <manufracturer>Hyundai Motor Company</manufracturer>
+               <brand_name>Hyundai Elantra</brand_name>
+               <carType>Hybrid</carType>
+               <price>4000000</price>
+               <odometer_count>19000</odometer_count>
+               <model_year>2016</model_year>
+               <mileage>26</mileage>
+               <color>Red</color>
+               <Displacement>1500</Displacement>
+               <registration_number>1546784</registration_number>
+               <service_requirement>No</service_requirement>
+               <width unit="inch">1795.0</width>
+               <length unit="inch">175.73</length>
+               <height unit="inch">52.44</height>
+               <Wheelbase unit="inch">110.25</Wheelbase>
+               <ground_clearence unit="inch">6.2</ground_clearence>
+               <range unit ="km">300</range>
+          </sedan_item>
+          
+           <sedan_item product_number="1" insurance="Done" road_tax="paid" VIN="DT4PL13J7N0217627" engine_number="89OVH18239">
+               <manufracturer>Nissan Group</manufracturer>
+               <brand_name>Nissan Sunny</brand_name>
+               <version>VD</version>
+               <carType>fuel</carType>
+               <price>3700000</price>
+               <odometer_count>27000</odometer_count>
+               <model_year>2015</model_year>
+               <color>Red</color>
+               <Displacement>1800</Displacement>
+               <registration_number>1546784</registration_number>
+               <service_requirement>No</service_requirement>
+               <width unit="inch">1895.0</width>
+               <length unit="inch">162.73</length>
+               <height unit="inch">54.44</height>
+               <Wheelbase unit="inch">97.25</Wheelbase>
+               <ground_clearence unit="inch">6.1</ground_clearence>
+          </sedan_item>
+     </sedan>
+</product>
+</root>
